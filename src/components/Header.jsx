@@ -3,6 +3,20 @@ import React from "react";
 function Header(props) {
   return (
     <div className="header">
+      <ul className="header__navigator">
+        <li className="navigator__name">
+          <a href="#">{"Jobest"}</a>
+        </li>
+        <li className="navigator__link">
+          <a href="#">{"Home"}</a>
+        </li>
+        <li className="navigator__link">
+          <a href="#">{"Jobs"}</a>
+        </li>
+        <li className="navigator__link">
+          <a href="#">{"Career tips"}</a>
+        </li>
+      </ul>
       <img src={require("../images/bg1.png")} className="header__oval" alt="" />
       <div className="header__body">
         <p className="header__title">{"Find your job better and faster"}</p>
@@ -23,7 +37,7 @@ function Header(props) {
         </div>
       </div>
       <img
-        src={require("../images/illustration1.png")}
+        src={require("../images/illustration0.png")}
         className="header__image"
         alt=""
       />
