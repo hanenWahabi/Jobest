@@ -1,0 +1,30 @@
+@import "../utilities/variables";
+
+.searchBar {
+  grid-column: 2/6;
+  position: relative;
+
+  &__input {
+    width: 70%;
+    height: 45px;
+    border-radius: 30px;
+    border-color: transparent;
+    box-shadow: 0px 16px 122px 0px rgba(211, 212, 212, 0.68);
+    background-color: white;
+    font-family: NunitoSans;
+    font-size: 16px;
+    color: $grey2;
+    padding-left: 10px;
+    outline: none;
+  }
+  &__input::placeholder {
+    color: $grey2;
+    font-size: 14px;
+  }
+  &__icon {
+    position: absolute;
+    width: 40px;
+    top: 4.5px;
+    right: 28%;
+  }
+}
