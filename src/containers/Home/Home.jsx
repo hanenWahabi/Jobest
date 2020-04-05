@@ -3,6 +3,7 @@ import illustration2 from "../../images/illustration2.png";
 import illustration3 from "../../images/illustration3.png";
 import Feature from "../../components/Feature";
 import Header from "../../components/Header";
+import Footer from '../../components/Footer';
 import "../../sass/main.scss";
 
 function Home() {
@@ -24,6 +25,7 @@ function Home() {
         srcPicture={illustration3}
         type="inverse"
       />
+      <Footer />
    
     </div>
   );
