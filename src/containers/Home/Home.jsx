@@ -17,7 +17,7 @@ function Home() {
         }
         srcPicture={illustration2}
       />
-        <Feature
+      <Feature
         title={"Million of jobs, finds the one thats rights for you"}
         description={
           "Analytics bootstrapping buzz first mover advantage network effects funding handshake. Buyer social media burn rate interaction design prototype handshake."
@@ -32,15 +32,3 @@ function Home() {
 }
 
 export default Home;
-/*
-   <Feature
-        title={"Million of jobs, finds the one thats rights for you"}
-        description={
-          "Analytics bootstrapping buzz first mover advantage network effects funding handshake. Buyer social media burn rate interaction design prototype handshake."
-        }
-        srcPicture={illustration3}
-        type="inverse"
-      />
-
-
-*/
