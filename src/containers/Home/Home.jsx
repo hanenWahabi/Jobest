@@ -24,6 +24,7 @@ function Home() {
         srcPicture={illustration3}
         type="inverse"
       />
+   
     </div>
   );
 }
