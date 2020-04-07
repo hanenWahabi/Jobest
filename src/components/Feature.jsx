@@ -1,5 +1,6 @@
 import React from "react";
 function Feature(props) {
+
   return (
   <div className={props.type==='inverse'? "wrapperInverse"    :"wrapper" }>
   <div className= {props.type==='inverse'? "leftInverse"    :"left"}>
@@ -19,20 +20,18 @@ function Feature(props) {
         <div className="justifyPicture">
                   <img src={props.srcPicture} className="picture" alt="logo" />
 
-           </div>
-  :
+    <div className="content">
+      <p className="title">{props.title}</p>
+      <p className="description">{props.description}</p>
+    </div>
+    }
 
-<div className="content">
-<p className="title">{props.title}</p>
-<p className="description">{props.description}</p>
+  </div>
 </div>
-}
-       
-          </div>
-        </div>
 
-      
-  );
+
+);
 }
+
 
 export default Feature;
