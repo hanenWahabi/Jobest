@@ -1,0 +1,51 @@
+.categories-wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 35px 0;
+  margin-top: 30px;
+}
+
+.categories {
+  grid-column: 2/8;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 35px;
+  margin-top: 20px;
+
+  &__title {
+    grid-column: 2/8;
+    font-family: poppinsMedium;
+    color: $black;
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+  }
+  &__subtitle {
+    grid-column: 2/8;
+    font-family: rubikRegular;
+    color: $grey;
+    margin: 15px;
+    text-align: center;
+  }
+}
+.category {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 40px 0;
+  margin: 0 10px;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 5px $bluish-12;
+  &__image {
+    width: 80px;
+  }
+  &__name {
+    min-width: 164px;
+    color: $dusk-blue;
+    font-family: poppinsBold;
+    font-size: 14px;
+    text-align: center;
+  }
+}
