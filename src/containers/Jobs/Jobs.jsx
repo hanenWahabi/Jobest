@@ -1,8 +1,13 @@
 import React from "react";
 import "../../sass/main.scss";
+import Search from "../../components/Search";
 
 function Jobs() {
-  return <div>{"JOBS"}</div>;
+  return (
+    <div>
+      <Search />
+    </div>
+  );
 }
 
 export default Jobs;
