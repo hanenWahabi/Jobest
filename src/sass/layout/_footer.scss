@@ -1,0 +1,127 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+
+  &__background {
+    width: 100%;
+  }
+  &__content {
+    width: 100%;
+    position: absolute;
+    top: 20vw;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: minmax(250px, auto);
+  }
+
+  &__btnSocailMedia {
+    width: 100%;
+    position: absolute;
+    bottom: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__btnMedia {
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(rgb(41, 99, 187), rgb(24, 56, 107));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px 0 25px;
+    cursor: pointer;
+  }
+  &__pictureSocailMediaFb {
+    background-size: contain;
+    background-position: center;
+    width: 10px;
+  }
+  &__pictureSocailMedia {
+    background-size: contain;
+    background-position: center;
+    width: 15px;
+  }
+  &__name {
+    font-size: 16px;
+    font-family: poppinsBold;
+    color: white;
+  }
+  &__item {
+    font-size: 14px;
+    font-family: rubikRegular;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  &__category {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / 3;
+    // grid-row: 1 / 2;
+  }
+
+  &__community {
+    display: flex;
+    flex-direction: column;
+    grid-column: 4 / 5;
+    // grid-row: 1 / 2;
+  }
+  &__about {
+    display: flex;
+    flex-direction: column;
+    grid-column: 6 / 7;
+    // grid-row: 1 / 2;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    grid-column: 8 / 9;
+    // grid-row: 1 / 2;
+  }
+}
+
+@media (max-width: 690px) {
+  .footer {
+    &__background {
+      height: 1050px;
+      width: 140%;
+    }
+    &__content {
+      width: 100%;
+      position: absolute;
+      top: 50vh;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(4, auto);
+    }
+
+    &__category {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 1/2;
+    }
+
+    &__community {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 1/2;
+    }
+    &__about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 1/2;
+    }
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 1/2;
+    }
+  }
+}
