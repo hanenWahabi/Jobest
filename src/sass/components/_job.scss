@@ -2,7 +2,7 @@
   grid-column: 2/8;
   display: grid;
   grid-template-columns: 50px auto 70px;
-  grid-template-rows: 28px 28px;
+  grid-template-rows: auto 28px;
   grid-column-gap: 20px;
   padding-bottom: 20px;
   border-bottom: 0.5px solid $grey3;
