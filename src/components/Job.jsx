@@ -28,7 +28,9 @@ function Job({ title, logo, company, location, created_at, type }) {
         </div>
         <div className="job__date">
           <img src={calendar} alt="" />
-          <p>{created_at}</p>
+          <p>
+            {created_at.slice(4, 10).concat(". ").concat(created_at.slice(23))}
+          </p>
         </div>
       </div>
     </div>
