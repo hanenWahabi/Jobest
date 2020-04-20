@@ -1,0 +1,95 @@
+.job {
+  grid-column: 2/8;
+  display: grid;
+  grid-template-columns: 50px auto 70px;
+  grid-template-rows: 28px 28px;
+  grid-column-gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid $grey3;
+  margin-bottom: 30px;
+  &__logo {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    border: 0.5px solid $grey3;
+  }
+  &__title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: $dark-blue;
+    font-size: 18px;
+    font-family: rubikRegular;
+    margin: 0;
+    padding-top: 3px;
+  }
+  &__type {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+    color: $dark-blue;
+    font-size: 11px;
+    font-family: poppinsMedium;
+    width: 50px;
+    height: 23px;
+    padding: 5px 12px 0 12px;
+    border-radius: 15px;
+  }
+  &__type > p {
+    margin: 0;
+    text-align: center;
+  }
+  &__details {
+    grid-column: 2/-1;
+    display: flex;
+    color: $grey3;
+    font-size: 12px;
+    font-family: poppinsMedium;
+  }
+
+  &__details > div {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+  }
+  &__details > div > img {
+    width: 10px;
+    height: 14px;
+    margin-right: 5px;
+  }
+  &__details > div > p {
+    margin: 0;
+  }
+  &__date {
+    margin-left: auto;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 706px) {
+  .job {
+    // grid-column: 2/7;
+
+    grid-template-columns: 50px auto;
+    grid-template-rows: auto 28px auto;
+    row-gap: 8px;
+    border: 0.5px solid $grey3;
+    padding: 15px;
+    border-radius: 15px;
+
+    &__logo {
+      grid-row: 1/2;
+    }
+    &__type {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+    &__details {
+      grid-column: 1/-1;
+      grid-row: 3/-1;
+    }
+    &__details > div {
+      flex-direction: column;
+    }
+  }
+}
