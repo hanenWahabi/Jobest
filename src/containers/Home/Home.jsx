@@ -14,6 +14,8 @@ import shape5 from "../../images/Shape5.png";
 import shape6 from "../../images/Shape6.png";
 import shape7 from "../../images/Shape7.png";
 
+import { connect } from "react-redux";
+import { getJOBS } from "../../actions/Job";
 const data = [
   { name: "Accounting / Finance", icon: shape2 },
   { name: "Design / Creative", icon: shape3 },
@@ -22,10 +24,10 @@ const data = [
   { name: "Education / Training", icon: shape6 },
   { name: " Consultancy", icon: shape7 },
 ];
-function Home() {
+function Home({ getJOBS }) {
   return (
     <div>
-      <Header />
+      <Header onClick={() => getJOBS("react")} />
       <Feature
         title={"Find your passion and achieve success"}
         description={
@@ -48,4 +50,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default connect(null, { getJOBS })(Home);

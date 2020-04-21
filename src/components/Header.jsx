@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Redirect } from "react-router-dom";
 
 function Header(props) {
-  return (
+  const [navigate, setNavigate] = useState(false);
+
+  return navigate ? (
+    <Redirect to="/jobs" push={true} />
+  ) : (
     <div className="header">
       <ul className="header__navigator">
         <li className="navigator__name">
@@ -33,6 +38,10 @@ function Header(props) {
             src={require("../images/search.png")}
             className="searchBar__icon"
             alt=""
+            onClick={() => {
+              props.onClick();
+              setNavigate(true);
+            }}
           />
         </div>
       </div>
